@@ -23,7 +23,7 @@ fun main() {
 fun Application.cloudflare() {
     if (rabbitHost.isNotEmpty()) {
         install(RabbitMQ) {
-            setupAMQP()
+            setupAMQP(false)
         }
     }
 
